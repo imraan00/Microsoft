@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Office 2021 Professional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a professional look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Hide content initially for dynamic display */
+        .app-detail-page {
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <div class="min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg py-6 px-4 sm:px-6 lg:px-8 rounded-b-lg">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+                <div class="flex items-center mb-2 sm:mb-0">
+                    <!-- Microsoft Logo -->
+                    <img src="Logo.png" alt="Microsoft Logo" class="h-10 mr-4">
+                    <h1 class="text-4xl font-extrabold tracking-tight">Microsoft Office 2021 Professional</h1>
+                </div>
+                <p class="text-xl font-light">Legit Fully Licensed Lifetime Subscription</p>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+            <!-- Introduction Section (Always visible) -->
+            <section id="intro-section" class="bg-white p-8 rounded-xl shadow-lg mb-12 text-center">
+                <h2 class="text-3xl font-bold text-blue-700 mb-4">Unlock Your Productivity with Office 2021</h2>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    Get a legitimate, fully licensed lifetime subscription to Microsoft Office 2021 Professional. Explore each application below to see how it can empower your work, school, and personal projects.
+                </p>
+            </section>
+
+            <!-- Main Applications Grid Page -->
+            <section id="main-apps-page" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Microsoft Word Card -->
+                <div class="app-card bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center cursor-pointer transform transition-transform hover:scale-105 duration-300" data-app="word">
+                    <img src="Word.png" alt="Microsoft Word Logo" class="w-40 h-40 mb-4 rounded-full border-4 border-blue-500 p-2 bg-blue-50">
+                    <h3 class="text-2xl font-bold text-blue-600">Microsoft Word</h3>
+                </div>
+
+                <!-- Microsoft Excel Card -->
+                <div class="app-card bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center cursor-pointer transform transition-transform hover:scale-105 duration-300" data-app="excel">
+                    <img src="Excel.png" alt="Microsoft Excel Logo" class="w-40 h-40 mb-4 rounded-full border-4 border-green-500 p-2 bg-green-50">
+                    <h3 class="text-2xl font-bold text-green-600">Microsoft Excel</h3>
+                </div>
+
+                <!-- Microsoft PowerPoint Card -->
+                <div class="app-card bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center cursor-pointer transform transition-transform hover:scale-105 duration-300" data-app="powerpoint">
+                    <img src="Powerpoint.png" alt="Microsoft PowerPoint Logo" class="w-40 h-40 mb-4 rounded-full border-4 border-red-500 p-2 bg-red-50">
+                    <h3 class="text-2xl font-bold text-red-600">Microsoft PowerPoint</h3>
+                </div>
+
+                <!-- Microsoft Access Card -->
+                <div class="app-card bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center cursor-pointer transform transition-transform hover:scale-105 duration-300" data-app="access">
+                    <img src="Access.png" alt="Microsoft Access Logo" class="w-40 h-40 mb-4 rounded-full border-4 border-purple-500 p-2 bg-purple-50">
+                    <h3 class="text-2xl font-bold text-purple-600">Microsoft Access</h3>
+                </div>
+
+                <!-- Microsoft Outlook Card -->
+                <div class="app-card bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center cursor-pointer transform transition-transform hover:scale-105 duration-300" data-app="outlook">
+                    <img src="Outlook.png" alt="Microsoft Outlook Logo" class="w-40 h-40 mb-4 rounded-full border-4 border-blue-400 p-2 bg-blue-50">
+                    <h3 class="text-2xl font-bold text-blue-500">Microsoft Outlook</h3>
+                </div>
+
+            </section>
+
+            <!-- Application Detail Pages (Hidden by default) -->
+            <section id="app-detail-container" class="app-detail-page bg-white p-8 rounded-xl shadow-lg mb-12">
+                <button id="back-button" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full mb-6 transition-colors duration-200 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to Applications
+                </button>
+                <div id="app-detail-content" class="flex flex-col items-center text-center">
+                    <!-- Content will be dynamically loaded here -->
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8 mt-12 rounded-t-lg">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-2xl font-bold mb-2">Contact Me</h4>
+                    <p class="text-gray-400">Reach out for more information or to purchase your license!</p>
+                </div>
+                <div class="space-y-3">
+                    <p class="text-lg">
+                        <span class="font-semibold">Phone:</span> <a href="tel:+27847865336" class="text-blue-400 hover:underline">084 786 5336</a>
+                    </p>
+                    <p class="text-lg">
+                        <span class="font-semibold">Instagram:</span> <a href="https://www.instagram.com/imraan_mehtar" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">imraan_mehtar</a>
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 text-sm mt-8 pt-6 border-t border-gray-700">
+                &copy; 2025 Microsoft Office 2021 Professional. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Data for each application, including expanded details
+        const appsData = {
+            word: {
+                name: "Microsoft Word",
+                logo: "http://googleusercontent.com/file_content/0",
+                color: "blue",
+                description: "Microsoft Word is the world's leading word processing software, enabling users to create professional-quality documents, reports, letters, and resumes with ease. Its intuitive interface and powerful features make it indispensable for both personal and professional use.",
+                features: [
+                    "Write letters, resumes, reports, and essays with advanced formatting options.",
+                    "Add pictures, tables, charts, and SmartArt designs to enhance your documents.",
+                    "Utilize robust grammar and spell-checking tools for error-free writing.",
+                    "Collaborate in real-time with others, track changes, and add comments.",
+                    "Save documents in various formats (DOCX, PDF) or print them for school, work, or personal use.",
+                    "Create professional-looking newsletters, brochures, and flyers using pre-made templates."
+                ]
+            },
+            excel: {
+                name: "Microsoft Excel",
+                logo: "http://googleusercontent.com/file_content/1",
+                color: "green",
+                description: "Microsoft Excel is a powerful spreadsheet program used for organizing, analyzing, and visualizing data. From simple calculations to complex financial models, Excel provides the tools to manage and interpret large datasets efficiently.",
+                features: [
+                    "Create budgets, invoices, financial reports, and detailed data tables.",
+                    "Perform automatic calculations using a vast library of formulas and functions.",
+                    "Generate insightful charts and graphs (bar, line, pie, scatter) to visualize your data trends.",
+                    "Track things like sales, expenses, inventory, attendance, and project progress.",
+                    "Utilize pivot tables and data analysis tools for advanced reporting and summarization.",
+                    "Automate repetitive tasks with macros and VBA programming for increased efficiency."
+                ]
+            },
+            powerpoint: {
+                name: "Microsoft PowerPoint",
+                logo: "http://googleusercontent.com/file_content/2",
+                color: "red",
+                description: "Microsoft PowerPoint is the industry standard for creating dynamic and engaging slideshow presentations. Whether for business, education, or personal use, PowerPoint helps you convey your message effectively with rich multimedia and visual effects.",
+                features: [
+                    "Design professional-looking slideshows with a wide range of themes and customizable templates.",
+                    "Incorporate text, images, audio, video, and interactive elements into your slides.",
+                    "Add smooth transitions between slides and captivating animations to objects for dynamic presentations.",
+                    "Present information for school, work, or events with powerful presenter view tools.",
+                    "Collaborate on presentations with colleagues in real-time and share them easily.",
+                    "Create compelling infographics and visual stories to enhance your message."
+                ]
+            },
+            access: {
+                name: "Microsoft Access",
+                logo: "http://googleusercontent.com/file_content/3",
+                color: "purple",
+                description: "Microsoft Access is a robust database management system designed for storing, organizing, and managing large amounts of information. It's ideal for small to medium-sized businesses and individuals who need to track and report on structured data.",
+                features: [
+                    "Store and organize diverse data, such as customer records, product details, inventory, and employee information.",
+                    "Efficiently search, sort, and filter through your information using powerful query tools.",
+                    "Create custom forms for easy data entry and user-friendly interfaces.",
+                    "Generate comprehensive reports for analysis and decision-making.",
+                    "Useful for running businesses that need to track lots of data and relationships between data points.",
+                    "Integrate with other Office applications for seamless data flow and reporting."
+                ]
+            },
+            outlook: {
+                name: "Microsoft Outlook",
+                logo: "http://googleusercontent.com/file_content/4",
+                color: "blue-400", // Using a specific Tailwind color class
+                description: "Microsoft Outlook is a comprehensive email, calendar, and contact management application that helps you stay organized and connected. It's an essential tool for managing your communications and schedule efficiently.",
+                features: [
+                    "Send and receive emails from multiple accounts in one unified inbox.",
+                    "Schedule appointments, meetings, and events with a powerful calendar.",
+                    "Set reminders and manage tasks to keep track of your to-do list.",
+                    "Organize contacts, create distribution lists, and manage your address book.",
+                    "Utilize advanced search features to quickly find emails and information.",
+                    "Integrate with other services and enhance productivity with add-ins."
+                ]
+            }
+        };
+
+        const mainAppsPage = document.getElementById('main-apps-page');
+        const appDetailContainer = document.getElementById('app-detail-container');
+        const appDetailContent = document.getElementById('app-detail-content');
+        const backButton = document.getElementById('back-button');
+        const introSection = document.getElementById('intro-section');
+
+        // Function to show a specific application's detail page
+        function showAppDetail(appName) {
+            const app = appsData[appName];
+            if (!app) return; // Exit if app not found
+
+            // Hide the main applications grid and introduction
+            mainAppsPage.style.display = 'none';
+            introSection.style.display = 'none';
+
+            // Clear previous content and build new content
+            appDetailContent.innerHTML = `
+                <img src="${app.logo}" alt="${app.name} Logo" class="w-48 h-48 mb-6 rounded-full border-4 border-${app.color}-500 p-3 bg-${app.color}-50">
+                <h2 class="text-4xl font-extrabold text-${app.color}-700 mb-4">${app.name}</h2>
+                <p class="text-lg leading-relaxed text-gray-700 mb-8 max-w-3xl text-center">${app.description}</p>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">What you can do with ${app.name}:</h3>
+                <ul class="list-disc list-inside text-left text-gray-700 space-y-3 text-lg max-w-2xl">
+                    ${app.features.map(feature => `<li>${feature}</li>`).join('')}
+                </ul>
+            `;
+
+            // Show the detail container
+            appDetailContainer.style.display = 'block';
+        }
+
+        // Function to show the main applications grid
+        function showMainAppsPage() {
+            appDetailContainer.style.display = 'none'; // Hide detail page
+            mainAppsPage.style.display = 'grid'; // Show main grid
+            introSection.style.display = 'block'; // Show introduction
+        }
+
+        // Add event listeners to each application card
+        document.querySelectorAll('.app-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const appName = card.dataset.app;
+                showAppDetail(appName);
+            });
+        });
+
+        // Add event listener to the back button
+        backButton.addEventListener('click', showMainAppsPage);
+
+        // Initially show the main applications page
+        showMainAppsPage();
+    </script>
+
+</body>
+</html>
